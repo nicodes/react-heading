@@ -1,0 +1,10 @@
+{
+  "name": "react-heading",
+  "version": "0.0.0",
+  "description": "Smart headings for React",
+  "main": "index.js",
+  "repository": "https://github.com/nicodes/react-heading.git",
+  "author": "nicodes <nicozessoules@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
