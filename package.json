@@ -17,6 +17,7 @@
   "repository": "https://github.com/nicodes/react-heading.git",
   "author": "nicodes <nicozessoules@gmail.com>",
   "license": "MIT",
+  "private": false,
   "scripts": {
     "build": "rm -rf dist && tsc"
   },
