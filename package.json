@@ -1,6 +1,6 @@
 {
   "name": "@nicodes/react-heading",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Smart headings for React",
   "keywords": [
     "react-heading",
@@ -24,5 +24,11 @@
   "devDependencies": {
     "@types/react": "^18.0.26",
     "typescript": "^4.9.4"
-  }
+  },
+  "files": [
+    "/package.json",
+    "/README.md",
+    "/dist",
+    "/src"
+  ]
 }
