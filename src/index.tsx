@@ -5,10 +5,12 @@ type HeadingIntrinsicElements = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
 
 /** Find the number of `<h1>, ..., <h6>` elements in the DOM above by recursing through all parents and grandparent's children "uncles" */
 function findH({ parentElement }: HTMLElement, n: number): number {
-  if (!parentElement || n === 6) return n
+  if (!parentElement || n === 6)
+    return n
 
   for (const e of Array(parentElement.children))
-    if (e[0] instanceof HTMLHeadingElement) return findH(parentElement, ++n)
+    if (e[0] instanceof HTMLHeadingElement)
+      return findH(parentElement, ++n)
 
   return findH(parentElement, n)
 }
@@ -21,7 +23,9 @@ export default function H({ children, ...props }: HTMLAttributes<HTMLHeadingElem
   useEffect(() => {
     const parentElement = ref.current?.parentElement
     const n = parentElement ? findH(parentElement, 1) : 1
-    if (n === 2 || n === 3 || n === 4 || n === 5 || n === 6) setE(`h${n}`)
+
+    if (n === 2 || n === 3 || n === 4 || n === 5 || n === 6)
+      setE(`h${n}`)
   }, [])
 
   return <E ref={ref} {...props}>{children}</E>
