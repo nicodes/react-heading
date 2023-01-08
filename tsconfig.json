@@ -12,6 +12,5 @@
     "allowSyntheticDefaultImports": true,
     "declaration": true,
     "sourceMap": true
-  },
-  "include": ["src"]
+  }
 }
