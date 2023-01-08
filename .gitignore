@@ -1,0 +1,7 @@
+.DS_Store
+
+/nicodes-react-heading*.tgz
+
+/node_modules
+/dist
+/package

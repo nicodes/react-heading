@@ -1,10 +1,27 @@
 {
-  "name": "react-heading",
+  "name": "@nicodes/react-heading",
   "version": "0.0.0",
   "description": "Smart headings for React",
-  "main": "index.js",
+  "keywords": [
+    "react-heading",
+    "react",
+    "component",
+    "heading",
+    "typescript",
+    "javascript",
+    "html",
+    "nicodes"
+  ],
+  "main": "dist/index",
+  "types": "dist/index",
   "repository": "https://github.com/nicodes/react-heading.git",
   "author": "nicodes <nicozessoules@gmail.com>",
   "license": "MIT",
-  "private": false
+  "scripts": {
+    "build": "rm -rf dist && tsc"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.26",
+    "typescript": "^4.9.4"
+  }
 }
