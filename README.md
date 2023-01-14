@@ -72,12 +72,16 @@ Which will render the following HTML:
 </div>
 ```
 
-### Props Example
+### Props Examples
 
-`react-heading` supports all standard HTML Heading Element Attributes so you can add any props you'd normally use:
+`react-heading` has two optional props `min` and `max`, that limit the potential heading degrees. For example limiting the degrees between `<h2>`, ..., `<h5>`, which you may want to do if `<h1>` is reserved to be specifically defined.
+
+`react-heading` also supports all standard HTML Heading Element Attributes so you can add any props you'd normally use:
 
 ```jsx
 <H
+  min={2}
+  max={5}
   id="my-id"
   className="my-class-name"
   data-cy="my-test-selector"
