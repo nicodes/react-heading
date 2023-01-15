@@ -95,4 +95,4 @@ Which will render the following HTML:
 
 - Github: https://github.com/nicodes/react-heading
 - npm: https://www.npmjs.com/package/@nicodes/react-heading
-- Medium: Coming Soon!
+- Medium: https://nicodes.medium.com/react-heading-8ad7438d8f11
